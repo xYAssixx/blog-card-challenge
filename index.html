@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <style>
+      @font-face {
+        font-family: "Figtree";
+        src: url("assets/fonts/Figtree-VariableFont_wght.ttf");
+      }
+      body {
+        margin: 0;
+        font-family: "Figtree";
+      }
+      .container {
+        background-color: hsl(47, 88%, 63%);
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+      }
+      .card {
+        box-sizing: border-box;
+        padding: 20px;
+        border: 1px solid hsl(0, 0%, 0%);
+        box-shadow: 8px 8px hsl(0, 0%, 0%);
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 15px;
+        width: 300px;
+      }
+      .card > img {
+        width: 100%;
+        border-radius: 8px;
+      }
+      .card h4 {
+        background-color: hsl(47, 88%, 63%);
+        width: fit-content;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 15px;
+        margin: 15px 0px 8px;
+      }
+      .card h4 + span {
+        font-size: 13px;
+        color: hsl(0, 0%, 7%);
+        font-weight: bold;
+      }
+      .card h3 {
+        margin: 10px 0px;
+        font-weight: 900;
+      }
+      .card h3:hover,
+      .card h3:focus {
+        color: hsl(47, 88%, 63%);
+      }
+      .card h3 + p {
+        color: hsl(0, 0%, 42%);
+        font-size: 16px;
+      }
+      .card .avatar {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .card .avatar h5 {
+        margin: 0;
+        color: hsl(0, 0%, 7%);
+      }
+      .card .avatar img {
+        width: 35px;
+        height: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img src="assets/images/illustration-article.svg" alt="svg" />
+        <h4>Learning</h4>
+        <span>Published 21 Dec 2023</span>
+        <h3>HTML & CSS foundations</h3>
+        <p>
+          These languages are the backbone of every website, defining structure,
+          content, and presentation
+        </p>
+        <div class="avatar">
+          <img src="assets/images/image-avatar.webp" alt="avt" />
+          <h5>Greg Hooper</h5>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
